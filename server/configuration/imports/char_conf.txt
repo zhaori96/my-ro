@@ -14,3 +14,7 @@ char_port: 6121
 // The login server's ip and port.
 login_ip: rathena
 login_port: 6900
+
+pincode_enabled: no
+char_del_delay: 10
+start_zeny: 1500

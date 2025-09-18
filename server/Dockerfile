@@ -44,6 +44,7 @@ RUN apt-get update && \
         libpcre3 \
         procps \
         vim \
+        git \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /rathena
@@ -53,6 +54,8 @@ COPY --from=builder /rathena .
 
 COPY ./configuration/imports conf/import
 COPY ./database/ db/import
+COPY ./npc/scripts_custom.conf npc
+COPY ./npc/shops.txt npc/custom
 
 # Defina o comando de inicialização
 CMD ["./athena-start", "watch"]

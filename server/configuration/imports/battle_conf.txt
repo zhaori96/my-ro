@@ -1,0 +1,82 @@
+synchronize_damage: yes
+
+// Drops
+item_rate_common: 300
+item_rate_common_boss: 200
+item_rate_common_mvp: 200
+
+item_rate_heal: 300
+item_rate_heal_boss: 200
+item_rate_heal_mvp: 200
+
+item_rate_use: 300
+item_rate_use_boss: 200
+item_rate_use_mvp: 200
+
+item_rate_equip: 300
+item_rate_equip_boss: 200
+item_rate_equip_mvp: 200
+
+item_rate_card: 2000
+item_rate_card_boss: 1500
+item_rate_card_mvp: 1500
+
+item_rate_mvp: 1000
+
+item_rate_adddrop: 1000
+
+item_group_rate: 1000
+
+item_rate_treasure: 1000
+
+// EXP
+base_exp_rate: 5000
+job_exp_rate: 5000
+multi_level_up: yes
+exp_bonus_attacker: 50
+exp_bonus_max_attacker: 20
+mvp_exp_rate: 500
+quest_exp_rate: 500
+heal_exp: 10
+death_penalty_base: 1000
+death_penalty_job: 1000
+disp_experience: yes
+disp_zeny: yes
+
+// Features
+feature.atcommand_suggestions: yes
+feature.warp_suggestions: yes
+
+// GM
+atcommand_spawn_quantity_limit: 300
+
+// Mob
+show_mob_info: 4
+zeny_from_mobs: yes
+mobs_level_up_exp_rate: 2
+mob_size_influence: yes
+
+// Party
+party_even_share_bonus: 10
+
+// Player
+restart_hp_rate: 100
+restart_sp_rate: 100
+restart_ap_rate: 100
+natural_healhp_interval: 3000
+natural_healsp_interval: 3000
+max_aspd: 193
+max_third_aspd: 196
+max_extended_aspd: 196
+max_summoner_aspd: 196
+bone_drop: 2
+loose_ap_on_death: no
+loose_ap_on_map: no
+
+// Skill
+default_fixed_castrate: 0
+delay_dependon_dex: yes
+delay_dependon_agi: no
+min_skill_delay_limit: 10
+castrate_dex_scale: 100
+vcast_stat_scale: 360
