@@ -1,0 +1,34 @@
+services:
+  database:
+    build: ./database
+    image: rathena-database:latest
+    container_name: ragnarok-database
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: af7cc@leo
+      MYSQL_DATABASE: ragnarok
+    ports:
+      - "3306:3306"
+    volumes:
+      - rathena_mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 15s
+      timeout: 15s
+      retries: 10
+  rathena:
+    build: ./server
+    image: rathena-server:latest
+    container_name: rathena
+    restart: unless-stopped
+    depends_on:
+      database:
+        condition: service_healthy
+    ports:
+      - "6900:6900"
+      - "5121:5121"
+      - "6121:6121"
+      - "8888:8888"
+volumes:
+  rathena_mysql_data:
+

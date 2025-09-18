@@ -1,0 +1,18 @@
+// Map Server Configuration
+
+// Server Communication username and password.
+userid: s1
+passwd: p1
+
+// The map server's ip to bind to.
+// Set to 0.0.0.0 to listen on all interfaces.
+bind_ip: 0.0.0.0
+
+// The map server's port to bind to.
+map_port: 5121
+
+// The character server's ip and port.
+char_ip: rathena
+char_port: 6121
+
+console_silent: 16

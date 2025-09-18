@@ -1,0 +1,16 @@
+// Login Server Configuration
+
+// Server Communication username and password.
+userid: s1
+passwd: p1
+
+// The login server's ip to bind to.
+// Set to 0.0.0.0 to listen on all interfaces.
+bind_ip: 0.0.0.0
+
+// The login server's port to bind to.
+login_port: 6900
+
+new_account: yes
+
+//use_MD5_passwords: yes

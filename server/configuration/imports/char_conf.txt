@@ -1,0 +1,16 @@
+// Char Server Configuration
+
+// Server Communication username and password.
+userid: s1
+passwd: p1
+
+// The character server's ip to bind to.
+// Set to 0.0.0.0 to listen on all interfaces.
+bind_ip: 0.0.0.0
+
+// The character server's port to bind to.
+char_port: 6121
+
+// The login server's ip and port.
+login_ip: rathena
+login_port: 6900
