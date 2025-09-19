@@ -52,8 +52,16 @@ WORKDIR /rathena
 # Copie os binários compilados do estágio builder
 COPY --from=builder /rathena .
 
+# Configurações
 COPY ./configuration/imports conf/import
+COPY ./configuration/messages/map_msg.conf conf/msg_conf
+COPY ./configuration/messages/login_msg.conf conf/msg_conf
+COPY ./configuration/messages/import conf/msg_conf/import
+
+# Banco de dados
 COPY ./database/ db/import
+
+# NPC
 COPY ./npc/scripts_custom.conf npc
 COPY ./npc/shops.txt npc/custom
 

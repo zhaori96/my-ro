@@ -1,0 +1,1 @@
+269: Exibindo os primeiros %d resultados
